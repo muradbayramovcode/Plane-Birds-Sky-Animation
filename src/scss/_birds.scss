@@ -1,0 +1,44 @@
+.container{
+    .birds{
+        width: 20%;
+        position: fixed;
+        right: -23%;
+        top: -40px;
+        // z-index: 1;
+        animation: right-to-left 20s infinite linear;
+        animation-delay: 3s;
+    }
+
+    @keyframes right-to-left {
+        0% {
+            right: -23%;
+        }
+
+        100% {
+            right: 100%;
+        }
+
+    }
+
+    .birds2{
+        width: 20%;
+        position: fixed;
+        right: -23%;
+        top: 420px;
+        // z-index: 1;
+        animation: right-to-left 20s infinite linear;
+        animation-delay: 12s;
+    }
+
+    @keyframes right-to-left {
+        0% {
+            right: -23%;
+        }
+
+        100% {
+            right: 100%;
+        }
+
+    }
+
+}

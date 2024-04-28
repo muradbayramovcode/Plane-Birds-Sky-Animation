@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .plane {
+  width: 40%;
+  position: absolute;
+  top: 200px;
+  right: 400px;
+  animation: left-to-right 3s forwards;
+}
+@keyframes left-to-right {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 420px;
+    display: none;
+  }
+}
+.container .plane2 {
+  width: 40%;
+  position: absolute;
+  top: 200px;
+  right: 400px;
+  animation: move-plane 2.5s infinite linear;
+  animation-delay: 3s;
+  opacity: 0;
+}
+@keyframes move-plane {
+  0% {
+    opacity: 1;
+    top: 200px;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    opacity: 1;
+    top: 200px;
+  }
+}
+.container .background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-clip {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .background-clip {
+    width: auto;
+    height: 100%;
+  }
+}
+.container .birds {
+  width: 20%;
+  position: fixed;
+  right: -23%;
+  top: -40px;
+  animation: right-to-left 20s infinite linear;
+  animation-delay: 3s;
+}
+@keyframes right-to-left {
+  0% {
+    right: -23%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.container .birds2 {
+  width: 20%;
+  position: fixed;
+  right: -23%;
+  top: 420px;
+  animation: right-to-left 20s infinite linear;
+  animation-delay: 12s;
+}
+@keyframes right-to-left {
+  0% {
+    right: -23%;
+  }
+  100% {
+    right: 100%;
+  }
+}
